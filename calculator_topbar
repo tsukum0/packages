@@ -1,0 +1,21 @@
+$c[.                             calculator - v.1.5.6
+Use:
+$pkg install <location> calculator_topbar
+]
+$var[pkg.name;calculator]
+$var[z;\]]
+$var[y;\\\\;]
+$var[action;$message[2]]
+$var[action2;$if[$message[2]==install]installed$endif$if[$message[2]==update]updated$endif]
+# Done! <$var[pkg.name] was $var[action2] successfully!>
+$if[$varExists[list.pkg]]$setVar[list.pkg;$getVar[list.pkg]
+# $message[3]: ($var[action2]) calculator_topbar_]$endif
+$onlyIf[$message[4]==calculator_topbar;]
+$setVar[$message[3];
+$$c[]if[$$c[]message[1$var[z]==calc$var[z]
+```js
+# calculator 
+$$c[]replaceText[$$c[]message$var[y]calc$var[y]$var[y]1$var[z]=$$c[]calculate[$$c[]replaceText[$$c[]message$var[y]calc$var[y]$var[y]1$var[z]$var[z]
+```
+$$c[]endif
+]
