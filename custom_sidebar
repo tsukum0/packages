@@ -2,7 +2,7 @@ $c[.                    custom_sidebar - version 1.0.5
 - pre-build release!   
 
 ⚪ Use: 
-$pkg install standart_sidebar
+$pkg install custom_sidebar
 
 ########################################## ]
 $var[action;$if[$message[2]==install]installed$endif$if[$message[2]==update]updated$endif]
@@ -10,4 +10,4 @@ $var[action;$if[$message[2]==install]installed$endif$if[$message[2]==update]upda
 $setVar[prompt.inp;$$c[]hour:$$c[]minute:$$c[]second - $$c[]username[$$c[]botID\]@$$c[]username.host]
 $if[$varExists[list.pkg]]$setVar[list.pkg;$getVar[list.pkg]
 # prompt.inp: ($var[action]) custom_sidebar_]$endif
-$onlyIf[$message[3]==custom_sidebar;]
+$onlyIf[$message[3]==customp_sidebar;]
