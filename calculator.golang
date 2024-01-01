@@ -1,0 +1,24 @@
+$c[.                             calculator - v.2.5.7
+Use:
+$pkg install <location> calculator_console
+]
+$var[pkg.name;calculator]
+$var[z;\]]
+$var[y;\\\\;]
+$var[action;$message[2]]
+$var[action2;$if[$message[2]==install]installed$endif$if[$message[2]==update]updated$endif]
+# Done! <$var[pkg.name] was $var[action2] successfully!>
+$if[$varExists[list.pkg]]$setVar[list.pkg;$getVar[list.pkg]
+# $message[3]: ($var[action2]) calculator_console_]$endif
+$onlyIf[$message[4]==calculator_console;]
+$setVar[$message[3];
+$$c[]if[$$c[]message[1$var[z]==calc$var[z]
+ $$c[]if[$$c[]message[2$var[z]!=$var[z]
+# calculator 
+$$c[]replaceText[$$c[]message$var[y]calc$var[y]$var[y]1$var[z]=$$c[]calculate[$$c[]replaceText[$$c[]message$var[y]calc$var[y]$var[y]1$var[z]$var[z]
+ $$c[]else
+# calculator
+0
+ $$c[]endif
+$$c[]endif
+]
