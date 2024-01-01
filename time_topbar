@@ -1,0 +1,16 @@
+$c[.                            time_topbar - v3.1.0
+
+all information in on place.
+Use: 
+$pkg install <location> time_topbar
+]
+$var[action;$message[2]]
+$var[action2;$if[$message[2]==install]installed$endif$if[$message[2]==update]updated$endif]
+$if[$varExists[list.pkg]]$setVar[list.pkg;$getVar[list.pkg]
+# $message[3]: ($var[action2]) time_topbar_]$endif
+$onlyIf[$message[4]==time_topbar;]
+# Done! <time_topbar_ was $var[action2] successfully!>
+$setVar[$message[3];
+```js
+<$username[$botID]> - $$c[]hour:$$c[]minute:$$c[]second - $$c[]username - $authorID
+```]
