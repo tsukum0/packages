@@ -2,7 +2,7 @@ $c[.                             List for archived unit - v.2.5.1
 Use:
 $pkg install ls_console
 ]
-$var[pkg.name;ls_console]
+$var[pkg.name;ls]
 $var[z;\]]
 $var[y;\\\\;]
 $var[action;$message[2]]
