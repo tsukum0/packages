@@ -9,7 +9,7 @@ $var[action;$message[2]]
 $var[action2;$if[$message[2]==install]installed$endif$if[$message[2]==update]updated$endif]
 # Done! <$var[pkg.name] was $var[action2] successfully!>
 $if[$varExists[list.pkg]]$setVar[list.pkg;$getVar[list.pkg]
-# $message[3]: ($var[action2]) list_for_archived_unit_]$endif
+# $var[pkg.name]: ($var[action2]) list_for_archived_unit_]$endif
 $onlyIf[$message[>]==ls_console;]
 $onlyIf[$varExists[ls]==true;Before  installing the **ls**, you need to have the 'ls' location in global variables.]
 $setVar[ls;
