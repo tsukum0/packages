@@ -1,0 +1,19 @@
+$c[.                             List for archived unit - v.2.5.0
+Use:
+$pkg install ls_console
+]
+$var[pkg.name;ls_console]
+$var[z;\]]
+$var[y;\\\\;]
+$var[action;$message[2]]
+$var[action2;$if[$message[2]==install]installed$endif$if[$message[2]==update]updated$endif]
+# Done! <$var[pkg.name] was $var[action2] successfully!>
+$if[$varExists[list.pkg]]$setVar[list.pkg;$getVar[list.pkg]
+# $message[3]: ($var[action2]) list_for_archived_unit_]$endif
+$onlyIf[$message[>]==ls_console;]
+$onlyIf[$varExists[ls]==true;Before  installing the **ls**, you need to have the 'ls' location in global variables.]
+$setVar[ls;
+$$c[]if[$$c[]message[1$var[z]==ls$var[z]
+$$c[]json[$$c[]getVar[current_dir$var[z];0$var[z]
+$$c[]endif
+]
