@@ -1,4 +1,4 @@
-$c[.                             List for archived unit - v.2.5.0
+$c[.                             List for archived unit - v.2.5.1
 Use:
 $pkg install ls_console
 ]
@@ -14,6 +14,6 @@ $onlyIf[$message[>]==ls_console;]
 $onlyIf[$varExists[ls]==true;Before  installing the **ls**, you need to have the 'ls' location in global variables.]
 $setVar[ls;
 $$c[]if[$$c[]message[1$var[z]==ls$var[z]
-$$c[]json[$$c[]getVar[current_dir$var[z];0$var[z]
+$$c[]json[$$c[]getVar[current_dir$var[z]$var[y]0$var[z]
 $$c[]endif
 ]
