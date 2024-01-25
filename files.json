@@ -11,24 +11,24 @@
     "sbin/"
   ],
 
-  "home": [
+  "home": [""
     
   ],
-  "etc": [
+  "etc": [""
     
   ],
-  "opt": [
+  "opt": [""
     
   ],
-  "boot": [
+  "boot": [""
     
   ],
   "bin": [
     "bash.bash"
   ],
-  "mnt": [
+  "mnt": [""
      
   ],
-  "tmp": [
+  "tmp": [""
   ]
 }
