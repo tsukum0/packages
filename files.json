@@ -1,40 +1,42 @@
 {
   "~": "/",
   "/": [
-    "home",
-    "etc",
-    "opt",
-    "boot",
-    "bin",
-    "mnt",
-    "tmp"
+    "home/",
+    "etc/",
+    "opt/",
+    "boot/",
+    "bin/",
+    "mnt/",
+    "tmp/",
+    "tmp/",
 ],
 }
 {
-   "home": [
+  "home": [
 ],
 }
 {
-   "etc": [
+  "etc": [
 ],
 }
 {
-   "opt": [
+  "opt": [
 ],
 }
 {
-   "boot": [
+  "boot": [
 ],
 }
 {
-   "bin": [
+  "bin": [
+    "bash.bash",
 ],
 }
 {
-   "mnt": [
+  "mnt": [
 ],
 }
 {
-   "tmp": [
+  "tmp": [
 ],
 }
