@@ -1,34 +1,93 @@
 {
   "~": "/",
   "/": [
-    "home/",
-    "etc/",
-    "opt/",
-    "boot/",
-    "bin/",
-    "mnt/",
-    "tmp/",
-    "sbin/"
+  "bin",
+  "boot",
+  "dev",
+  "etc",
+  "home",
+  "lib",
+  "mnt",
+  "opt",
+  "proc",
+  "sbin",
+  "usr",
+  "var"
   ],
-
-  "home": [""
-    
-  ],
-  "etc": [""
-    
-  ],
-  "opt": [""
-    
-  ],
-  "boot": [""
-    
-  ],
-  "bin": [
-    "bash.bash"
-  ],
-  "mnt": [""
-     
-  ],
-  "tmp": [""
-  ]
+}
+{
+  "/bin/": [
+   "bash",
+   "cat",
+   "chmod",
+   "cp",
+   "date",
+   "echo",
+   "grep",
+   "gunzip",
+   "hostname",
+   "kill",
+   "less",
+   "ln",
+   "ls",
+   "mkdir",
+   "more",
+   "mount",
+   "nano",
+   "open",
+   "ping",
+   "ps",
+   "pwd",
+   "sh",
+   "su",
+   "tar",
+   "touch",
+   "uname",
+   "unmount"
+   ],
+   "/etc/": [
+     "crountab",
+     "cups",
+     "fonts",
+     "fstab",
+     "host.conf",
+     "host.name",
+     "hosts",
+     "hosts.allow",
+     "hosts.deny",
+     "init",
+     "init.d",
+     "issue",
+     "machine-id",
+     "mtab",
+     "mtools.conf",
+     "nanorc",
+     "networks",
+     "passwd",
+     "profile",
+     "protocols",
+     "resolv.conf",
+     "rpc",
+     "securetty",
+     "services",
+     "shells",
+     "timezone"
+     ],
+     "/usr/": [
+       "bin",
+       "include",
+       "lib",
+       "local",
+       "share"
+       ],
+       "/usr/local/": [
+         "bin",
+         "lib",
+         "man",
+         "sbin",
+         "share"
+         ],
+    "/var/": [
+      ""
+      ]
 }
